@@ -47,7 +47,7 @@ teradataFastloadCSV(data001, conn, connf, "P_xxxx_t", "tera_data001", replace = 
 
 Check whether a table is exist on Teradata:
 ```{r eval=FALSE}
-dbExistsTable(tony_con,"P_xxxx_t","test")
+dbExistsTable(conn,"P_xxxx_t","test")
 ```
 
 

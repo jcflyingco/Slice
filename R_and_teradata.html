@@ -141,7 +141,7 @@ connf &lt;- teradataConnect(database='P_xxxx_t', fastload = TRUE,csv=TRUE,system
 <p>Upload table to Teradata:</p>
 <pre class="r"><code>teradataFastloadCSV(data001, conn, connf, &quot;P_xxxx_t&quot;, &quot;tera_data001&quot;, replace = TRUE, primary_index = c(1))</code></pre>
 <p>Check whether a table is exist on Teradata:</p>
-<pre class="r"><code>dbExistsTable(tony_con,&quot;P_xxxx_t&quot;,&quot;test&quot;)</code></pre>
+<pre class="r"><code>dbExistsTable(conn,&quot;P_xxxx_t&quot;,&quot;test&quot;)</code></pre>
 <p>Delete table on Teradata:</p>
 <pre class="r"><code>dbExistsRemove(conn,&quot;P_xxxx_t&quot;,&quot;tera_data001&quot;)</code></pre>
 </div>
